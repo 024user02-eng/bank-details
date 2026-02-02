@@ -1,0 +1,14 @@
+A Software Requirements Specification (SRS) for bank details generally includes comprehensive data structures for customer profiles, account types (savings, current), and transaction modules. Key data points include customer ID, account number (unique), branch code, balance, and account holder personal details (name, DOB, email, address). 
+Key Data Fields in Bank SRS (Data Dictionary Focus)
+Customer Personal Info: CustomerID, Name, Gender, DateOfBirth, Address, EmailId, TelephoneNumber.
+Account Details: AccountNumber (Unique), AccountType (Saving/Current), BranchCode, OpeningDate, CurrentBalance, Status (Active/Inactive).
+Transaction Module: TransactionID, SourceAccount, TargetAccount, Amount, TransactionType (Deposit/Withdrawal/Transfer), Date, Description.
+Authentication: UserID, Password (hashed), SecurityQuestions, LastLoginTime. 
+Common Functional Modules
+Account Management: Create, view, update, and delete account details.
+Transaction Processing: Deposits, withdrawals, and fund transfers (with recipient verification).
+Balance Enquiry & Statements: Real-time balance lookup and generation of mini/customized statements. 
+Non-Functional Requirements for Data
+Security: Data must be encrypted at rest and in transit (SSL/TLS).
+Validation: Account numbers must be unique, and balances cannot be negative.
+Compliance: Systems often require audit logs for all transactions. 
